@@ -10,19 +10,21 @@
 
 
 int main() {
-    int loop_counter = 1000;
-    int end_number = 2000;
+    // this program prints all the numbers from 1000
+    // - 2000 ending the line every 5 numbers
+    int LOOP_COUNTER = 1000;
+    int END_NUMBER = 2000;
 
     // process
-    for (loop_counter = 1000; loop_counter
-            <= end_number; loop_counter++) {
-        if (loop_counter % 5 == 4) {
-            std::cout << loop_counter << " " << std::endl;
+    for (LOOP_COUNTER = 1000; LOOP_COUNTER
+            <= END_NUMBER; LOOP_COUNTER++) {
+        if (LOOP_COUNTER % 5 == 4) {
+            std::cout << LOOP_COUNTER << " " << std::endl;
         } else {
-            std::cout << loop_counter  <<  " ";
+            std::cout << LOOP_COUNTER  <<  " ";
         }
         // prevents terminal buffer from overflowing
         usleep(10);
     }
-    std::cout << "Done." << std::endl;
+    std::cout << "\n\nDone." << std::endl;
 }
